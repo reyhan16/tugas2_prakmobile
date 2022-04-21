@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'profile.dart';
+import 'login_page.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({Key? key}) : super(key: key);
@@ -16,14 +18,29 @@ class Dashboard extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  const Icon(
-                    Icons.menu,
-                    color: Colors.black,
-                    size: 40.0,
+                  IconButton(
+                    icon: const Icon(
+                      Icons.account_circle_rounded,
+                      size: 35,
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Profile()));
+                    },
+                    tooltip:
+                        MaterialLocalizations.of(context).backButtonTooltip,
                   ),
-                  Image.asset(
-                    "assets/image.png",
-                    width: 52.0,
+                  IconButton(
+                    icon: const Icon(
+                      Icons.logout_rounded,
+                      size: 30,
+                    ),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Login()));
+                    },
+                    tooltip:
+                        MaterialLocalizations.of(context).backButtonTooltip,
                   ),
                 ],
               ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'login_page.dart';
 import 'dashboard.dart';
+import 'profile.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -9,6 +10,7 @@ void main() {
     routes: {
       '/halamanPertama': (context) => Login(),
       '/halamanDashboard': (context) => Dashboard(),
+      '/halamanProfile': (context) => Profile(),
     },
   ));
 }
