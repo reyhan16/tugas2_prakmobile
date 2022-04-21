@@ -1,6 +1,7 @@
 Untuk memenuhi tugas prak mobile
+<br>
 <b> Membuat Register, Dashboard dan Profile Page
-  Tugas ini disusun oleh : 
+  <br>Tugas ini disusun oleh : 
   Reyhan Nazera Rusmana
   065119099
 </b>
